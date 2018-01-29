@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class ToDo extends Component {
   render() {
     return (
-      <li> A todo will go here </li>
+      <li type="checkbox" checked={ this.props.description} />
+        <span>{ this.props.description }</span>
+      </li>
     );
   }
 }
